@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo{
+    position: relative; /* posição relativa a si mesmo, posição inicial dele próprio*/
+                        /* se tiver o position realtive a caixa terá como fluxo a body */
+                        
+    top:20vh ; /*quando usar o botton usa-se o left / quando usar o top usa-se o right  */
+    right: -15vw;
+    background-color:lightblue ;
+    width: 15vw;
+    height: 25vh;
+    border: solid;
+}
+
+.olho{/*olho está sendo englobada pela div*/
+    position:absolute;/*tirando do fluxo normal e o referencial do olho será será contado a partir da caixa  */
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid;
+    bottom: 5vh;
+    left: 10vw;
+}
